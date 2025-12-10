@@ -62,8 +62,8 @@ SELECT * FROM Students where full_name LIKE 'Дмитрий&'
 
 Select * FROM Enrollments where grade IS NULL
 
-Select * FROM Courses Order by course_name
+Select * FROM Courses Order by course_name ASC
 
-SELECT * FROM Students Order by start_year 
+SELECT * FROM Students Order by start_year DESC ,full_name ASC
 
 SELECT * FROM Students Order by start_year DESC LIMIT 2
