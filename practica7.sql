@@ -58,12 +58,12 @@ SELECT * FROM Courses WHERE credits > 4
 
 SELECT * FROM Students Where email = elena.kuznetsova@newmail.com
 
-SELECT * FROM Students where full_name LIKE 'Дмитрий&'
+SELECT * FROM Students where full_name LIKE '%Дмитрий%'
 
 Select * FROM Enrollments where grade IS NULL
 
-Select * FROM Courses Order by course_name ASC
+Select * FROM Courses Order by course_name 
 
-SELECT * FROM Students Order by start_year DESC ,full_name ASC
+SELECT * FROM Students Order by start_year ,full_name 
 
 SELECT * FROM Students Order by start_year DESC LIMIT 2
